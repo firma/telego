@@ -1169,7 +1169,8 @@ type SendMediaGroupParams struct {
 	// MessageEffectID - Optional. Unique identifier of the message effect to be added to the message; for
 	// private chats only
 	MessageEffectID string `json:"message_effect_id,omitempty"`
-
+	//Optional. Caption for the animation, audio, document, paid media, photo, video or voice
+	Caption string `json:"caption,omitempty"`
 	// ReplyParameters - Optional. Description of the message to reply to
 	ReplyParameters *ReplyParameters `json:"reply_parameters,omitempty"`
 }
